@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Age Predictor</title>
+</head>
+
+<body>
+    <header class="header">
+        <img src="./bionical-logo-white.png" alt='bionical logo' id="bionical-logo" />
+    </header>
+    <div id="main-wrapper">
+        <div id="main">
+            <h1> Age Predictor</h1>
+            <p> Predict your age from your name and your country, just enter your details below:</p>
+            <form id="form-and-buttons" onsubmit="return false">
+                <div id="input-wrapper">
+                    <label class="form-input"> <b> Enter Name:</b>
+                        <div><input type="text" id="name" placeholder="Enter name " required></div>
+                    </label>
+                    <label class="form-input"> <b>Enter Country Code:</b>
+                        <div><input type="text" id="country" placeholder="Enter the country code" required></div>
+                    </label>
+                </div>
+                <div id="buttons">
+                    <button id="clear-entries">Clear entries</button>
+                    <button id="submit">Predict the age</button>
+                </div>
+                <p id="if-errors"></p>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <!-- Modal and result -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <h2>Age prediction!</h2>
+            <p id="output"></p>
+            <h3 id="output-age"></h3>
+        </div>
+        <div id="close-container"><span class="close">&times;</span></div>
+
+
+    </div>
+
+
+
+    <!-- Script -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
